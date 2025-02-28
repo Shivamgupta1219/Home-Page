@@ -1,0 +1,242 @@
+/* General Responsive Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background Image */
+.bg-image {
+  background-image: url('./assets/backgroundimage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Text Section */
+.Text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Button Container */
+.Btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 474px;
+  margin-top: 15px;
+}
+
+.Btn-cutomer {
+  background-color: #1C4670;
+  width: 150px;
+  height: 54px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  line-height: 54px;
+}
+
+/* Task Card */
+#taskCard {
+  height: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  right: 12px;
+  top: 150px;
+}
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 177px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 8px black;
+}
+
+.Card:hover {
+  box-shadow: 0px 4px 10px rgba(244, 211, 29, 0.91);
+}
+
+/* Image Box */
+.Image_box {
+  position: absolute;
+  display: flex;
+  right: 50px;
+  top: 154px;
+}
+
+.BackGroundImage_1 {
+  position: relative;
+  max-height: 500px;
+  width: 100%;
+}
+
+.Img-Box {
+  position: absolute;
+  right: -10px;
+  bottom: 1px;
+}
+
+.backGroundImage_2 {
+  max-height: 167px;
+  width: 100%;
+}
+
+/* Rating Container */
+.rating_container {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 0.5rem;
+}
+
+.Client-icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.typotext {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background: linear-gradient(127.81deg, #FFA229 10%, #1C4670 68%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* YouTube Icon */
+.youtube-Icon {
+  width: 30px;
+  height: 30px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.playbtn {
+  width: 0;
+  height: 0;
+  border-left: 12px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* 🟢 Responsive Design Adjustments */
+@media screen and (max-width: 950px) {
+  .Text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .Btn_container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .Btn-cutomer {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .Image_box {
+    position: relative;
+    right: auto;
+    top: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BackGroundImage_1 {
+    height: auto;
+    position: relative;
+    right: 15px;
+  }
+
+  .backGroundImage_2 {
+    height: auto;
+    width: 80%;
+    position: relative;
+    left: 12px;
+  }
+
+  #taskCard {
+    display: none;
+  }
+
+  .Img-Box {
+    right: 0px;
+  }
+}
+
+/* Mobile-Friendly Design */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .Btn_container {
+    flex-direction: column;
+  }
+
+  .Btn-cutomer {
+    width: 100%;
+    height: 48px;
+  }
+
+  .Image_box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
